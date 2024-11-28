@@ -1,4 +1,4 @@
-import { Menu, Linkedin, Github, Mail, CalendarClock } from "lucide-react"
+import { Menu, Linkedin, Github, Mail, CalendarClock, SquareUser } from "lucide-react"
 import { Button } from "../atoms/button"
 
 import {
@@ -27,6 +27,10 @@ export function HeaderNav() {
             <Link href='/' className="flex items-center text-lg gap-2 p-1">
                 <Github />
                 GitHub
+            </Link>
+            <Link href='/' className="flex items-center text-lg gap-2 p-1">
+                <SquareUser />
+                Bluesky
             </Link>
             <Link href='/' className="flex items-center text-lg gap-2 p-1">
                 <Mail />

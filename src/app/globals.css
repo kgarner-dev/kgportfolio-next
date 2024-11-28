@@ -12,9 +12,58 @@ Dark Blue: 218, 49%, 28%;
 Gray: 219, 6%, 55%;
 
 */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(260deg,#547FC9,#F2F4F8,#3C5F9A);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+  position: relative;
+  z-index: 1;
+}
+
+body::after {
+  inset: 0;
+  position: absolute;
+  content: '';
+  z-index: 2;
+  background: #F2F4F8;
+  opacity: 0.5;
+  backdrop-filter: 10px;
+  -webkit-backdrop-filter: 10px;
+}
+
+body * {
+  position: relative;
+  z-index: 5;
+}
+
+.dark body {
+  background: linear-gradient(260deg,#3c5f9a,#050910,#243e6a);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+.dark body::after {
+  inset: 0;
+  position: absolute;
+  content: '';
+  z-index: 2;
+  background: #050910;
+  opacity: 0.5;
+  backdrop-filter: 10px;
+  -webkit-backdrop-filter: 10px;
 }
 
 @layer base {
