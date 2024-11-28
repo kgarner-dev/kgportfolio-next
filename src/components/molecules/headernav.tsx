@@ -14,7 +14,7 @@ export function HeaderNav() {
     return (
         <Sheet>
         <SheetTrigger asChild>
-          <Menu />
+          <Menu className="cursor-pointer" />
         </SheetTrigger>
         <SheetContent className="flex flex-col items-start gap-4">
           <SheetHeader>

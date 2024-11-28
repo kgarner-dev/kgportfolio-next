@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,10 +27,10 @@ Gray: 219, 6%, 55%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(260deg,#547FC9,#F2F4F8,#3C5F9A);
   background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
+  animation: gradient-animation 12s ease infinite;
   position: relative;
   z-index: 1;
 }
@@ -52,7 +54,7 @@ body * {
 .dark body {
   background: linear-gradient(260deg,#3c5f9a,#050910,#243e6a);
   background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
+  animation: gradient-animation 12s ease infinite;
 }
 
 .dark body::after {
