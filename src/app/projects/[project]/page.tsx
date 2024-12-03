@@ -2,20 +2,16 @@
 
 import { useState, useEffect, use } from 'react';
 
-interface ProjectName {
-    params:{
-        project: string
-    }
-}
+export default function Project({ params }: { params: Promise<{ project: string }> }) {
 
-export default function Project( props: ProjectName ) {
     const [data, setData] = useState<any[]>([]);
+    const name = use(params)
 
     useEffect(() => {
         const fetchData = async() => {
             const response = await fetch('/content/projects.json');
             const jsonData = await response.json();
-            setData(jsonData.filter( (project: { url: string | string[]; }) => project.url.includes(`${props.params.project}`) ));
+            setData(jsonData.filter( (project: { url: string | string[]; }) => project.url.includes(`${[name.project]}`) ));
         };
 
         fetchData();
