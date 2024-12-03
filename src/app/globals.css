@@ -28,22 +28,16 @@ Gray: 219, 6%, 55%;
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(260deg,#547FC9,#F2F4F8,#3C5F9A);
+  background: linear-gradient(260deg,rgba(84, 127, 201, 0.5),rgba(242, 244, 248, 0.5),rgba(60, 95, 154, 0.5));
+  background-attachment: fixed;
   background-size: 180% 180%;
   animation: gradient-animation 12s ease infinite;
   position: relative;
   z-index: 1;
 }
 
-body::after {
-  inset: 0;
-  position: absolute;
-  content: '';
-  z-index: 2;
-  background: #F2F4F8;
-  opacity: 0.5;
-  backdrop-filter: 10px;
-  -webkit-backdrop-filter: 10px;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Montserrat", sans-serif;
 }
 
 body * {
@@ -52,20 +46,9 @@ body * {
 }
 
 .dark body {
-  background: linear-gradient(260deg,#3c5f9a,#050910,#243e6a);
+  background: linear-gradient(260deg,rgba(60, 95, 154, 0.5),rgba(5, 9, 16, 0.5),rgba(36, 62, 106, 0.5));
   background-size: 180% 180%;
   animation: gradient-animation 12s ease infinite;
-}
-
-.dark body::after {
-  inset: 0;
-  position: absolute;
-  content: '';
-  z-index: 2;
-  background: #050910;
-  opacity: 0.5;
-  backdrop-filter: 10px;
-  -webkit-backdrop-filter: 10px;
 }
 
 @layer base {

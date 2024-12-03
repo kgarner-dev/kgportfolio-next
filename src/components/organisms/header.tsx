@@ -4,8 +4,8 @@ import { HeaderNav } from "../molecules/headernav"
 
 export function Header() {
     return (
-        <header className="absolute left-0 right-0 top-0 z-50 w-full p-5 max-w-wide mx-auto">
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900 bg-opacity-75 backdrop-blur flex justify-between items-center shadow-xl">
+        <header className="sticky left-0 right-0 top-0 z-50 w-full p-5 max-w-wide mx-auto">
+            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900 bg-opacity-75 dark:bg-opacity-75 backdrop-blur flex justify-between items-center shadow-xl">
                 <Logo />
                 <div className="flex items-center gap-3">
                     <ThemeToggle />
