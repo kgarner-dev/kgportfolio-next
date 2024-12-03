@@ -2,6 +2,7 @@
     {
         "id": 1,
         "url": "bluebird",
+        "feature": true,
         "title": "blueBird",
         "tag": "AI",
         "description": "Lorem ipsum dolor",
@@ -12,6 +13,7 @@
     {
         "id": 999,
         "url": "",
+        "feature": true,
         "tag": "",
         "title": "More coming soon...",
         "description": "Be on the lookout for more projects featured on this page.",

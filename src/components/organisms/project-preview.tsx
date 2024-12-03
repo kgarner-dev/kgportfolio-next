@@ -11,7 +11,7 @@ export function ProjectPreview() {
         const fetchData = async() => {
             const response = await fetch('/content/projects.json');
             const jsonData = await response.json();
-            setData(jsonData);
+            setData(jsonData.filter((project: { feature: boolean; }) => project.feature == true));
         };
 
         fetchData();
