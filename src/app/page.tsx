@@ -1,4 +1,3 @@
-import "@/app/home.scss"
 import { Hero } from "@/components/organisms/hero";
 import { ProjectPreview } from "@/components/organisms/project-preview";
 

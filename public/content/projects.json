@@ -6,8 +6,8 @@
         "tag": "AI",
         "description": "Lorem ipsum dolor",
         "card_size": "large",
-        "year": "May 2024",
-        "thumbnail": "https://via.placeholder.com/400"
+        "date": "May 2024",
+        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq"
     },
     {
         "id": 999,
@@ -16,7 +16,7 @@
         "title": "More coming soon...",
         "description": "Be on the lookout for more projects featured on this page.",
         "card_size": "small",
-        "year": "",
-        "thumbnail": "https://via.placeholder.com/300"
+        "date": "",
+        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHVbj5uQqW8bhg7kDjcYUI5le2ME3qfydFB04N"
     }
 ]

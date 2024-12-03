@@ -21,7 +21,7 @@ export function ProjectPreview() {
         <div className="max-w-wide mx-auto w-full py-10 px-5">
         <div className="preview">
             {data.map((item) => (
-                <PreviewCard key={item.id} title={item.title} tag={item.tag} description={item.description} year={item.year} thumbnail={item.thumbnail} cardSize={item.card_size} url={item.url} />
+                <PreviewCard key={item.id} title={item.title} tag={item.tag} description={item.description} date={item.date} thumbnail={item.thumbnail} cardSize={item.card_size} url={item.url} />
             ))}
         </div>
         </div>
