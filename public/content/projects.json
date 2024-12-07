@@ -5,9 +5,13 @@
         "feature": true,
         "title": "blueBird",
         "tag": "AI",
-        "description": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis dictum mauris, sed vestibulum nulla.",
         "card_size": "large",
         "date": "May 2024",
-        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq"
+        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq",
+        "masthead": "https://placehold.co/800x400",
+        "body": {
+            "hello": true
+        }
     }
 ]

@@ -8,4 +8,8 @@
     @media (min-width: 600px) {
         padding: 0 $padding;
     }
+
+    h2 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+    }
 }

@@ -1,7 +1,11 @@
 import "./styles/hero.scss";
 import Link from "next/link";
 
-interface Content { headline: string, subheadline: string, text: string }
+interface Content { 
+    headline: string, 
+    subheadline: string, 
+    text: string 
+}
 
 export function Hero( props: Content ) {
     return (

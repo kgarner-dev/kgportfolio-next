@@ -1,0 +1,81 @@
+@import "../../app/palette.scss";
+
+.masthead {
+    padding: $padding-mobile;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+
+    &::after {
+        inset: 0;
+        position: absolute;
+        content: '';
+        background: transparentize($white, 0.3);
+    }
+
+    &__headline, &__text {
+        grid-column: auto / span 2;
+        color: $black;
+    }
+
+    * {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__headline {
+        a {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 5px 0;
+            font-size: clamp(2rem, 3.85vw, 3.85rem);
+        }
+    }
+
+    &__text {
+        margin-top: $inner-padding;
+    }
+
+    @media (min-width: 750px) {
+        padding: $padding;
+        min-height: 60vh;
+
+        &__headline, &__text {
+            grid-column: auto / span 1;
+            height: 100%;
+        }
+
+        &__text {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        &::after {
+            background: linear-gradient(to bottom right, transparentize($white, 0.3), transparent, transparentize($white, 0.3));
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .masthead {
+        &::after {
+            background: transparentize($black, 0.3);
+        }
+
+        &__headline, &__text {
+            color: $white;
+        }
+
+        @media (min-width: 750px) {
+            &::after {
+                background: linear-gradient(to bottom right, transparentize($black, 0.3), transparent, transparentize($black, 0.3));
+            }
+        }
+    }
+}

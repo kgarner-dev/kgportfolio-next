@@ -1,7 +1,15 @@
 import Link from "next/link";
 import "./styles/previewcard.scss";
 
-interface Content { title: string, tag: string, description: string, date: string, thumbnail: string, cardSize: string, url: string }
+interface Content { 
+    title: string, 
+    tag: string, 
+    description: string, 
+    date: string, 
+    thumbnail: string, 
+    cardSize: string, 
+    url: string 
+}
 
 export function PreviewCard( props: Content ) {
     return (

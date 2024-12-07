@@ -13,6 +13,12 @@
     }
 
     &__headline {
+        text-align: center;
+
+        @media (min-width: 600px) {
+            text-align: left;
+        }
+
         h1 {
             font-size: clamp(2rem, 3.85vw, 3.85rem);
         }
@@ -23,10 +29,14 @@
     }
 
     &__text {
+        margin-top: $inner-padding;
+        text-align: center;
+
         @media (min-width: 600px) {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            text-align: left;
         }
     }
 
