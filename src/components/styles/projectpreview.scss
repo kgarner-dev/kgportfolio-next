@@ -1,0 +1,18 @@
+@import "../../app/palette.scss";
+
+.preview__container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $padding-mobile;
+
+    @media (min-width: 600px) {
+        padding: $padding;
+    }
+
+    .preview {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 12px;
+        gap: 1.25rem;
+    }
+}

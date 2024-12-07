@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "url": "bluebird",
+        "feature": true,
+        "title": "blueBird",
+        "tag": "AI",
+        "description": "Lorem ipsum dolor",
+        "card_size": "large",
+        "date": "May 2024",
+        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq"
+    }
+]

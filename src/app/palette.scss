@@ -7,6 +7,7 @@ $gray: #adb5bd;
 
 $padding-mobile: 30px;
 $padding: 55px;
+$inner-padding: 25px;
 
 $max-width: 1500px;
 $max-width-narrow: 1200px;
@@ -52,6 +53,7 @@ body {
 .btn {
     background: $blue;
     padding: 8px 15px;
+    border-radius: 6px;
     font-size: 1.1rem;
     transition: all 0.3s ease;
 
