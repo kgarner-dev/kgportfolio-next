@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./palette.scss";
+
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --background: $white;
+    --foreground: $black;
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
+      --background: $black;
+      --foreground: $white;
     }
   }
   
@@ -17,11 +20,18 @@
   }
   
   body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.1rem;
   }
   
   * {

@@ -1,0 +1,61 @@
+$black: #051923;
+$white: #ffffff;
+$navy: #003554;
+$blue: #006494;
+$light-blue: #00a6fb;
+$gray: #adb5bd;
+
+$padding-mobile: 30px;
+$padding: 55px;
+
+$max-width: 1500px;
+$max-width-narrow: 1200px;
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+html {
+    background: $white;
+}
+
+body {
+    background: linear-gradient(260deg, transparentize($blue, 0.65), transparentize($white, 0.65), transparentize($light-blue, 0.65));
+    background-attachment: fixed;
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+    min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: $black;
+    }
+    
+    body {
+        background: linear-gradient(260deg, transparentize($blue, 0.75), transparentize($black, 0.75), transparentize($light-blue, 0.75));
+        background-attachment: fixed;
+        background-size: 180% 180%;
+        animation: gradient-animation 12s ease infinite;
+        min-height: 100vh;
+    }
+}
+
+.btn {
+    background: $blue;
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: $light-blue;
+    }
+}

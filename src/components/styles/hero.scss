@@ -1,0 +1,44 @@
+@import "../../app/palette.scss";
+
+.hero {
+    padding: $padding-mobile;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+        padding: $padding;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 50vh;
+    }
+
+    &__headline {
+        h1 {
+            font-size: clamp(2rem, 3.85vw, 3.85rem);
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 2vw, 2rem);
+        }
+    }
+
+    &__text {
+        @media (min-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    &__btns {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        @media (min-width: 600px) {
+            flex-direction: row;
+        }
+    }
+}
