@@ -1,0 +1,18 @@
+@import "../../app/palette.scss";
+
+.body__content {
+    max-width: $max-width-narrow;
+    margin: 0 auto;
+    padding: $padding-mobile;
+    display: flex;
+    flex-direction: column;
+    gap: $inner-padding;
+
+    @media (min-width: 600px) {
+        padding: $padding;
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+    }
+}

@@ -42,7 +42,7 @@ body {
     }
     
     body {
-        background: linear-gradient(260deg, transparentize($blue, 0.75), transparentize($black, 0.75), transparentize($light-blue, 0.75));
+        background: linear-gradient(260deg, transparentize($blue, 0.45), transparentize($black, 0.45), transparentize($light-blue, 0.45));
         background-attachment: fixed;
         background-size: 180% 180%;
         animation: gradient-animation 12s ease infinite;

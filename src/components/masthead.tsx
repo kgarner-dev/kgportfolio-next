@@ -1,11 +1,13 @@
 import "./styles/masthead.scss";
 import Link from "next/link"
+import React, { useState, useEffect } from 'react';
 
 interface Content {
     title: string,
     description: string,
     date: string,
-    masthead: string
+    masthead: string,
+    skills: string[]
 }
 
 export function Masthead( props: Content ) {
@@ -17,7 +19,15 @@ export function Masthead( props: Content ) {
                 <p>{ props.date }</p>
             </div>
 
-            <p className="masthead__text">{ props.description }</p>
+            <div className="masthead__text">
+                <div className="masthead__skills">
+                    {props.skills.map((item, index) => (
+                        <p key={index}>{item}</p>
+                    ))}
+                </div>
+
+                <p>{ props.description }</p>
+            </div>
         </section>
     )
 }
