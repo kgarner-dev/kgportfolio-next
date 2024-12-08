@@ -15,57 +15,6 @@
         "date": "May 2024",
         "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq",
         "masthead": "https://placehold.co/800x400",
-        "body": [
-            { "img": { "src": "https://via.placeholder.com/150", "alt": "Placeholder Image" } },
-            { "h2": "This is a test" },
-            { "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-            { "a": { "href": "https://example.com", "target": "_blank", "children": "Click here" } }
-        ]
-    },
-    {
-        "id": 2,
-        "url": "weddinglp",
-        "feature": true,
-        "title": "Wedding LP",
-        "tag": "Web",
-        "skills": [
-            "HTML",
-            "CSS",
-            "JS"
-        ],
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis dictum mauris, sed vestibulum nulla.",
-        "card_size": "small",
-        "date": "July 2023",
-        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq",
-        "masthead": "https://placehold.co/800x400",
-        "body": [
-            { "img": { "src": "https://via.placeholder.com/150", "alt": "Placeholder Image" } },
-            { "h2": "This is a test" },
-            { "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-            { "a": { "href": "https://example.com", "target": "_blank", "children": "Click here" } }
-        ]
-    },
-    {
-        "id": 3,
-        "url": "designerlp",
-        "feature": true,
-        "title": "Designer LP",
-        "tag": "Web",
-        "skills": [
-            "HTML",
-            "CSS",
-            "JS"
-        ],
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis dictum mauris, sed vestibulum nulla.",
-        "card_size": "medium",
-        "date": "July 2023",
-        "thumbnail": "https://utfs.io/f/C3h9qu5XgJvHP9cnCkG0ecIQzRyCWsJoThNrHZMSKBL49ljq",
-        "masthead": "https://placehold.co/800x400",
-        "body": [
-            { "img": { "src": "https://via.placeholder.com/150", "alt": "Placeholder Image" } },
-            { "h2": "This is a test" },
-            { "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-            { "a": { "href": "https://example.com", "target": "_blank", "children": "Click here" } }
-        ]
+        "body": "BlueBird"
     }
 ]
